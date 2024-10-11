@@ -1,0 +1,136 @@
+:root {
+  --cor-principal: #94694c;
+  --cor-secundaria: #a68776;
+  --branco: #ffffff;
+  --font-primaria: "Poppins", sans-serif;
+  --font-secundaria: "Roboto", sans-serif;
+}
+header {
+  height: 4rem;
+  padding: 0.625rem;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 3.5rem;
+}
+
+.container__menu {
+  display: flex;
+  gap: 1.5625rem;
+}
+
+.container__menu-link {
+  color: var(--cor-principal);
+  font-family: var(--font-secundaria);
+  font-weight: 500;
+  text-decoration: none;
+}
+.container img {
+  width: 5.5rem;
+  height: 3.5rem;
+}
+
+.container__corpo {
+  height: 42rem;
+  background-image: url(/assets/img/background.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container__corpo h1,
+span {
+  font-family: var(--font-primaria);
+  font-weight: 900;
+  font-size: 6rem;
+  line-height: 9rem;
+  color: var(--branco);
+}
+
+.container__corpo section {
+  display: flex;
+  flex-direction: column;
+}
+
+.container__corpo button {
+  width: 18.625rem;
+  height: 4.25rem;
+  border: none;
+  border-radius: 2.1875rem;
+  background: radial-gradient(50% 50% at 50% 50%, #fff 0%, #f9f9f9 100%);
+  box-shadow: 0px 10px 50px 0px rgba(148, 105, 76, 0.5);
+
+  color: var(--cor-principal);
+  text-align: center;
+  font-family: var(--font-primaria);
+  font-size: 1.125rem;
+  font-weight: 700;
+}
+
+.container__corpo h1,
+button {
+  margin-left: 5rem;
+}
+
+.container__corpo h1 {
+  margin-top: 4rem;
+}
+
+.container__corpo span {
+  margin-left: 12rem;
+}
+
+.container__corpo button {
+  margin-top: 4.5rem;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.container__corpo button:hover {
+  color: var(--cor-secundaria);
+  opacity: 1;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.titulo {
+  color: var(--cor-principal);
+  text-align: center;
+  text-shadow: 0px 4px 4px rgba(148, 105, 76, 0.5);
+  font-family: var(--font-primaria);
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 800;
+  margin-top: 4.38rem;
+  margin-bottom: 3.15rem;
+}
+
+.card {
+  display: flex;
+  gap: 2.31rem;
+}
+
+.card__li {
+  width: 24.0625rem;
+  height: 31.5rem;
+  border-radius: 1.875rem;
+  background: var(--branco);
+  box-shadow: 0px 10px 30px 0px rgba(16, 51, 30, 0.1);
+}
+
+.card__li h3 {
+  color: #94694c;
+  font-family: var(--font-primaria);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 1.5rem;
+  margin: 1.87rem 1.87rem 1.87rem 0.62rem;
+}
